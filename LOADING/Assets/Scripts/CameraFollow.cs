@@ -65,17 +65,17 @@ public class CameraFollow : MonoBehaviour
         {
             if(mouse_input.x>= target.x - local_width && mouse_input.x <= target.x + local_width)
             {
-                Debug.Log("Góra środek");
+                //Debug.Log("Góra środek");
                 temp_point = new Vector3(mouse_input.x, target.y + local_height, 0);
             }
             else if(mouse_input.x < target.x - local_width)
             {
-                Debug.Log("Góra lewo");
+               // Debug.Log("Góra lewo");
                 temp_point = new Vector3(target.x - local_width, target.y + local_height, 0);
             }
             else if (mouse_input.x > target.x + local_width)
             {
-                Debug.Log("Góra prawo");
+               // Debug.Log("Góra prawo");
                 temp_point = new Vector3(target.x + local_width, target.y + local_height, 0);
             }
             return temp_point;
@@ -84,17 +84,17 @@ public class CameraFollow : MonoBehaviour
         {
             if (mouse_input.x >= target.x - local_width && mouse_input.x <= target.x + local_width)
             {
-                Debug.Log("Dół środek");
+               // Debug.Log("Dół środek");
                 temp_point = new Vector3(mouse_input.x, target.y - local_height, 0);
             }
             else if (mouse_input.x < target.x - local_width)
             {
-                Debug.Log("Dół lewo");
+               // Debug.Log("Dół lewo");
                 temp_point = new Vector3(target.x - local_width, target.y - local_height, 0);
             }
             else if (mouse_input.x > target.x + local_width)
             {
-                Debug.Log("Dół prawo");
+                //Debug.Log("Dół prawo");
                 temp_point = new Vector3(target.x + local_width, target.y - local_height, 0);
             }
             return temp_point;
@@ -103,7 +103,7 @@ public class CameraFollow : MonoBehaviour
         {
             if (mouse_input.y >= target.y - local_height && mouse_input.y <= target.y + local_height)
             {
-                Debug.Log("Prawo środek");
+                //Debug.Log("Prawo środek");
                 temp_point = new Vector3(target.x + local_width, mouse_input.y, 0);
             }
             return temp_point;
@@ -112,7 +112,7 @@ public class CameraFollow : MonoBehaviour
         {
             if (mouse_input.y >= target.y - local_height && mouse_input.y <= target.y + local_height)
             {
-                Debug.Log("Lewo środek");
+                //Debug.Log("Lewo środek");
                 temp_point = new Vector3(target.x - local_width, mouse_input.y, 0);
             }
             return temp_point;
